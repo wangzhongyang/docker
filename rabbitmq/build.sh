@@ -7,4 +7,6 @@ TAG="v$(date +"%Y%m%d")"
 FILE_PATH=$(pwd)/rabbitmq/Dockerfile
 REGISTRY="979238315"
 
+wget https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.13.0/rabbitmq_delayed_message_exchange-3.13.0.ez
 . $(pwd)/public/public.sh
+rm rabbitmq_delayed_message_exchange-3.13.0.ez

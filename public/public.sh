@@ -1,6 +1,13 @@
 #!/bin/bash  
 set -x
 
+# 引用方法文件
+. $(pwd)/public/functions.sh
+
+TAG=""
+
+# 检查VERSION值，为空设置
+setTag
 
 # 构建镜像  
 docker build -t $REGISTRY/$IMAGE_NAME -f $FILE_PATH .  

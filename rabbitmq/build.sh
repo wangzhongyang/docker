@@ -3,12 +3,12 @@ set -x
 
 # 定义镜像名称和标签  
 IMAGE_NAME="rabbitmq-with-delayed"  
-TAG="v$(date +"%Y%m%d")"
+VERSION="3.13.1"
 FILE_PATH=$(pwd)/rabbitmq/Dockerfile
 REGISTRY="979238315"
 
 wget https://github.com/rabbitmq/rabbitmq-delayed-message-exchange/releases/download/v3.13.0/rabbitmq_delayed_message_exchange-3.13.0.ez
-. $(pwd)/public/public.sh
-rm rabbitmq_delayed_message_exchange-3.13.0.ez
 
-docker run -it -d -p 5672:5672 -p 5671:5671 -p 15671:15671 -p 15672:15672 979238315/rabbitmq-with-delayed rabbitmq
+. $(pwd)/public/public.sh
+
+rm rabbitmq_delayed_message_exchange-3.13.0.ez

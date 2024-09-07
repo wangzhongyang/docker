@@ -3,7 +3,7 @@ set -x
   
 # 定义镜像名称和标签  
 IMAGE_NAME="frps"  
-TAG="v1.0"  
+TAG="v0.60.0"  
 FILE_PATH=$(pwd)/frps/Dockerfile
 REGISTRY="979238315"
   

@@ -2,7 +2,7 @@ FROM bitnami/minideb:bookworm
 
 LABEL maintainer="wangzy <979238315@qq.com>"
 
-ENV FRP_VERSION 0.56.0
+ENV FRP_VERSION 0.60.0
 
 
 RUN install_packages ca-certificates curl libcrypt1 libgeoip1 libpcre3 libssl3 openssl

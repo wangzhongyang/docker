@@ -4,7 +4,7 @@ set -x
 # 引用方法文件
 . $(pwd)/public/functions.sh
 
-TAG=""
+# TAG=""
 
 # 检查VERSION值，为空设置
 setTag
